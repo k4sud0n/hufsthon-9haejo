@@ -53,7 +53,7 @@ const Navbar = () => {
     const navItems = [
         { id:1, name: "사람", icon: PersonIcon, to: "/main" },
         { id:2, name: "나를 좋아하는", icon: Q_StorageIcon, to: "/interviewquestion" },
-        { id:3, name: "채팅", icon: FaceIdIcon, to: "/interview" },   
+        { id:3, name: "매칭", icon: FaceIdIcon, to: "/Metching" },   
     ];
 
     return (

@@ -9,7 +9,6 @@ const PageContainer = styled.div`
 
 const Imgdiv = styled.div`
     background: url("../img/samsung.jpg");
-
 `;
 
 const InfoTextContainer = styled.div`
