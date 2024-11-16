@@ -1,6 +1,8 @@
 import { Icon } from '@iconify/react';
 import styled from 'styled-components';
-import HeartImage from "./img/Heart.png"; // 상대 경로로 import
+// import HeartImage from "./img/Heart.png"; // 상대 경로로 import
+
+import { Heart } from './logo';
 
 const StyledIcon = styled(Icon)`
   font-size: ${(props) => props.size || '24px'};
@@ -14,7 +16,7 @@ const HeartIcon = styled.img`
 `;
 
 export const Q_StorageIcon = (props) => (
-  <HeartIcon src="HeartImage" {...props} />
+<Heart {...props} />
 );
 
 export const HomeIcon = (props) => (
