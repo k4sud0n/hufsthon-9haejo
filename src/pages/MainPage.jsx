@@ -2,6 +2,7 @@ import { useNavigate } from "react-router-dom";
 
 import mainPageImage from "../src/image.png";
 
+
 function MainPage() {
   const navigate = useNavigate();
 

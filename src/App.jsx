@@ -7,6 +7,7 @@ import {
 import { motion, AnimatePresence } from "framer-motion"; // framer-motion import
 import MainPage from "./pages/MainPage";
 import SignupPage from "./pages/SignupPage";
+import Navbar from "./components/navbar";
 
 function App() {
   const location = useLocation();
@@ -19,12 +20,17 @@ function App() {
   };
 
   return (
-    <div className="flex justify-center items-center bg-cover bg-center h-screen bg-gray-100">
+    <div className="flex justify-center items-center bg-cover bg-center bg-gray-100">
+      <Navbar />
       <div className="w-full max-w-sm h-full bg-white bg-opacity-70 border border-gray-300 rounded-lg shadow-lg flex flex-col p-6">
+
+        
         <AnimatePresence initial={false} mode="wait">
+
           {" "}
           {/* mode="wait" 추가 */}
           <Routes location={location} key={getRouteKey(location.pathname)}>
+
             <Route
               path="/"
               element={
@@ -35,7 +41,9 @@ function App() {
                   transition={{ type: "tween", duration: 0.3 }}
                 >
                   <MainPage />
+
                 </motion.div>
+              
               }
             />
             <Route
@@ -52,6 +60,7 @@ function App() {
               }
             />
           </Routes>
+
         </AnimatePresence>
       </div>
     </div>
