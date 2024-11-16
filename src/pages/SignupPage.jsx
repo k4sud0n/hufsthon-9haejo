@@ -16,7 +16,7 @@ function SignupPage() {
         </button>
         <div className="ml-2">먼저,</div>
       </div>
-      <div>어쩌고저쩌고</div>
+      <div>회원가입페이</div>
     </>
   );
 }

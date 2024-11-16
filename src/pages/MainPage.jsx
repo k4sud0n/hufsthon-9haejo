@@ -26,7 +26,7 @@ function MainPage() {
         </div>
 
         {/* 가입 버튼 */}
-        <div className="p-4 space-y-4 -">
+        <div className="p-4 space-y-4 mb-10">
           {" "}
           {/* mt-4로 간격 줄이기 */}
           <button
