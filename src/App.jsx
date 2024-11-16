@@ -4,9 +4,10 @@ import {
   Route,
   useLocation,
 } from "react-router-dom";
-import { motion, AnimatePresence } from "framer-motion"; // framer-motion import
+import { motion, AnimatePresence } from "framer-motion";
 import MainPage from "./pages/MainPage";
 import SignupPage from "./pages/SignupPage";
+import MatchPage from "./pages/MatchPage";
 
 function App() {
   const location = useLocation();
@@ -15,6 +16,7 @@ function App() {
   const getRouteKey = (pathname) => {
     if (pathname === "/") return "main"; // 메인 페이지
     if (pathname === "/signup") return "signup"; // 회원가입 페이지
+    if (pathname === "/match") return "match"; // 매칭 페이지
     return "default"; // 기본 키
   };
 
@@ -51,6 +53,7 @@ function App() {
                 </motion.div>
               }
             />
+            <Route path="/match" element={<MatchPage />} />
           </Routes>
         </AnimatePresence>
       </div>
