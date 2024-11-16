@@ -7,6 +7,9 @@ import {
 import { motion, AnimatePresence } from "framer-motion"; // framer-motion import
 import MainPage from "./pages/MainPage";
 import SignupPage from "./pages/SignupPage";
+import Matching from "./pages/Matching";
+import MessagePage from "./pages/MessagePage";
+
 import Navbar from "./components/navbar";
 
 function App() {
@@ -59,8 +62,19 @@ function App() {
                 </motion.div>
               }
             />
+            <Route
+              path="/matching"
+              element={
+                  <Matching />
+              }
+            />
+            <Route
+              path="/message"
+              element={
+                  <MessagePage />
+              }
+            />
           </Routes>
-
         </AnimatePresence>
       </div>
     </div>
