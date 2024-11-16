@@ -21,7 +21,7 @@ function MainPage() {
       </div>
 
       {/* 가입 버튼 */}
-      <div className="p-4 space-y-4 mt-auto mt-36">
+      <div className="p-4 space-y-4 mt-36">
         <button
           onClick={handleGoSignup}
           className="w-full bg-blue-500 text-white py-3 rounded-full text-lg font-semibold shadow-md hover:bg-blue-600 transition-all"
