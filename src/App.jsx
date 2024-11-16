@@ -19,7 +19,7 @@ function App() {
   };
 
   return (
-    <div className="flex justify-center items-center bg-cover bg-center h-screen bg-gray-100">
+    <div className="flex justify-center items-center bg-cover bg-center max-h-fit h-screen bg-gray-100 overflow-hidden">
       <div className="w-full max-w-sm h-full bg-white bg-opacity-70 border border-gray-300 rounded-lg shadow-lg flex flex-col p-6">
         <AnimatePresence initial={false} mode="wait">
           {" "}
